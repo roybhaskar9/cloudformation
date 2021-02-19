@@ -1,0 +1,14 @@
+AWSTemplateFormatVersion: 2010-09-09
+Description: Working Instance
+Resources:
+  Instance1:
+    Type: "AWS::EC2::Instance"
+    Properties:
+      ImageId: ami-1b791862
+      InstanceType: t2.micro
+      KeyName: mykeyname
+      SecurityGroupIds:
+        - sg-abcd1234
+      Tags:
+        - Key: Name
+          Value: CFWorkingTest
