@@ -1,5 +1,5 @@
 AWSTemplateFormatVersion: 2010-09-09
-Description: VPC, SGs, instances
+Description: Launch a simple ec2 instance
 Resources:
   Instance1:
     Type: "AWS::EC2::Instance"
